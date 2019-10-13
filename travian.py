@@ -19,8 +19,8 @@ password.send_keys("") #pass
 
 driver.find_element_by_name("s1").click()
 
-def printit():
-    td.Timer(60.0, printit).start()
+def checkAttack():
+    td.Timer(60.0, checkAttack).start()
     content = driver.page_source
     soup = BeautifulSoup(content, features="lxml")
     span = soup.find("span", {"class" : "a1"})
@@ -33,4 +33,4 @@ def printit():
     else:
         print("Nie ma ataku")
 
-printit()
+checkAttack()
