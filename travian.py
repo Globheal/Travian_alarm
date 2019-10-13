@@ -7,8 +7,6 @@ import threading as td
 
 driver = webdriver.Chrome(executable_path=r'H:\Projekty\Travian_Alarm\chromedriver_win32\chromedriver.exe')
 
-attacks=[] #List to store attacks
-
 driver.get("https://ts1.travian.pl/dorf1.php?newdid=79&") #link do sprawdzanej wioski
 
 username = driver.find_element_by_name("name")
