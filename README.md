@@ -54,3 +54,9 @@ between quotation marks write Your login to the game.
 password.send_keys("MyPassword")
 ```
 between quotation marks write Your password to the game.
+
+## How to run:
+Simply double click *start.bat* or You can run it with Python:
+```
+Python travian.py
+```
